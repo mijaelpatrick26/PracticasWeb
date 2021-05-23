@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajando con Formularios</title>
+</head>
+<body>
+    <h1>Formulario de Registro de Alumnos</h1>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="txtDni">Número de documento:</label> <input type="text" name="txtDni" id="txtDni" placeholder="Ingrese su DNI"><br>
+            <label for="txtNombre">Nombres:</label><input type="text" name="txtNom" id="txtNom" placeholder="Ingrese sus nombres"><br>
+            <label for="txtApe">Apellidos:</label><input type="text" name="txtApe" id="txtApe" placeholder="Ingrese sus apellidos"><br>
+            <label for="txtFec">Fecha de Nacimiento:</label><input type="date" name="txtFec" id="txtFec" placeholder="Ingrese su fecha de Nacimiento"><br>
+            <label for="txtDir">Dirección:</label><input type="text" name="txtDir" id="txtDir"placeholder="Ingrese su dirección"><br>
+            <label for="cboDistrito">Distrito:</label>
+            <select name="cboDistrito" id="cboDistrito">
+                <option value="0">Seleccione un distrito</option>
+                <option value="1">Cercado de Lima</option>
+                <option value="2">Breña</option>
+                <option value="3">San Juan de Lurigancho</option>
+                <option value="4">Jesus Maria</option>
+                <option value="5">La Molina</option>
+            </select><br>
+            <label>Sexo:</label><input type="radio" name="sexo" id="rbm"><label for="rbM">Masculino</label> <input type="radio" name="sexo" id="rbF"><label for="rbF">Femenino</label><br>
+            <label>Estado</label><input type="checkbox" name="chkEst" id="chkEst"><label for="chkEst">Habilitado</label><br>
+        </fieldset>
+        <fieldset>
+            <legeng>Datos del Curso</legeng>
+            <label for="cboCiclo"></label>
+            <select name="cboCiclo" id="cboCiclo">
+                <option value="0">Seleccione un Ciclo</option>
+                <option value="1">I Ciclo</option>
+                <option value="2">II Ciclo</option>
+                <option value="3">III Ciclo</option>
+                <option value="4">IV Ciclo</option>
+                <option value="5">V Ciclo</option>
+                <option value="6">VI Ciclo</option>
+            </select><br>
+            <label></label>
+        </fieldset>
+    </form>
+</body>
+</html>

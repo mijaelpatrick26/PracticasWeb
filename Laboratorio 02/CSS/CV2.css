@@ -1,0 +1,49 @@
+body {
+  background-color: #d0fcfdd7;
+}
+.contenedor {
+  background-color: #368f945b;
+  width: 100%;
+  padding-left: 15px;
+  font-family: este;
+  font-size: 20px;
+}
+.foto {
+  border-radius: 100%;
+}
+@font-face {
+  font-family: spidey;
+  src: url(/Font/Helvetica-Oblique.ttf);
+}
+@font-face {
+  font-family: este;
+  src: url(/Font/Helvetica-Oblique.ttf);
+}
+.spidey {
+  font-family: spidey;
+  font-size: 30px;
+}
+.este {
+  font-family: este;
+  font-size: 20px;
+}
+.columnas {
+  width: 100%;
+  margin: auto;
+}
+.x3 {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+h2 {
+  font-family: este;
+  font-size: 150%;
+}
+.texto {
+  font-family: este;
+  font-size: 15px;
+  font-size: 120%;
+}
