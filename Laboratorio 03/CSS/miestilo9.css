@@ -1,0 +1,118 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.conntenedor {
+  background-color: whitesmoke;
+}
+
+/* Agregamos color al texto */
+.parrafocolor {
+  color: yellowgreen;
+}
+
+/* Alineamos en texto dentro de los parrafos */
+.parrafoderecha {
+  text-align: right;
+}
+
+/* Alineamos en texto dentro de los parrafos */
+.parrafoizquierda {
+  text-align: left;
+}
+
+/* Alineamos en texto dentro de los parrafos */
+.parrafocentro {
+  text-align: center;
+}
+
+/* Alineamos en texto dentro de los parrafos */
+.parrafojustificado {
+  text-align: justify;
+}
+
+/* Agregamos decoración al texto */
+.parrafosubrayado {
+  text-decoration: underline;
+}
+
+/* Agregamos decoración al texto */
+.parrafosobrelinea {
+  text-decoration: overline;
+}
+
+/* Agregamos decoración al texto */
+.parrafotachado {
+  text-decoration: line-through;
+}
+
+/* Agregamos decoración al texto */
+.parrafosinestilo {
+  text-decoration: none;
+}
+
+/* Agregamos transformaciones al parrafo */
+.parrafomayuscula {
+  text-transform: uppercase;
+}
+
+/* Agregamos transformaciones al parrafo */
+.parrafominuscula {
+  text-transform: lowercase;
+}
+
+/* Agregamos transformaciones al parrafo */
+.parrafonombrepropio {
+  text-transform: capitalize;
+}
+
+/* Agregamos espacio a las letras del aparrafo */
+.parrafoespacionormal {
+  letter-spacing: 5px;
+}
+
+/* Agregamos espacio a las letras del aparrafo */
+.parrafoespaciocomprimido {
+  letter-spacing: -5px;
+}
+
+/* Agregamos espacio a las letras del aparrafo */
+.parrafoespaciolineas {
+  line-height: 0.9px;
+}
+
+/* Agregamos espacio a las letras del aparrafo */
+.parrafoespaciolineascomprimido {
+  line-height: -1.9px;
+}
+
+/* Agregamos espacio a las separaciones entre las letras del aparrafo */
+.parrafoespacioletra {
+  word-spacing: 10px;
+}
+
+/* Agregamos espacio a las separaciones entre las letras del aparrafo */
+.parrafoespacioletracomprimido {
+  word-spacing: -10px;
+}
+
+/* Agregamos separación al espacio en blanco */
+.parrafoespacio {
+  white-space: pre-wrap;
+}
+
+.parrafosangria {
+  text-indent: 50px;
+}
+
+/* Agregamos sombra al texto del parrafo */
+.parrafosombra {
+  text-shadow: 2px 2px yellowgreen;
+}
+
+/* Agregamos sombra al texto del parrafo */
+.parrafosombragrande {
+  text-transform: uppercase;
+  font-size: 25px;
+  text-shadow: 5px 5px 5px red;
+}
