@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javscript - Parte 1</title>
+    <script type="text/javascript">
+    //operaciones
+    //Calculos aritmeticos utilizando los operadores aritmeticos
+    // + --> suma
+    // - --> resta
+    // * --> multiplicación
+    // / --> división
+
+    // Ejemplo1:
+    // Desarrollar una aplicación que permita calcular la suma de 2 números, si se sabe que los números son 6 y 7
+    // ¿Cuantas variables necesito?
+    // 3
+    // ¿Que tipo de dato necesito?
+    // Entero
+    // Declarando variable
+    var n1;
+    var n2;
+    var sum;
+    // Inicializar variable
+    n1=0;
+    n2=0;
+    sum=0;
+    // Asignando valores
+    n1=6;
+    n2=7;
+    //Realizando operaciones
+    sum=n1+n2;
+    //Mostrando resultados
+    alert("La suma es: "+sum);
+
+    document.write("La suma es: "+sum+"<br>");
+    document.write("<hr>");
+
+    // Ejemplo 2
+    // Desarrollar una aplicación que permita calcular el promedio de cuatro notas, si se sabe que las notas son 18, 17, 13, 15
+    // ¿Cuantas variables necesito?
+    // 5
+    // ¿Que tipo de dato necesito?
+    // Real
+    // Declarando variable
+    var n1;
+    var n2;
+    var n3;
+    var n4;
+    var prom;
+    // Inicializar variables
+    n1=0;
+    n2=0;
+    n3=0;
+    n4=0;
+    prom=0;
+    // Asignando valores
+    n1=18;
+    n2=17;
+    n3=13;
+    n4=15;
+    //Realizando operaciones
+    prom=(n1+n2+n3+n4)/4;
+    //Mostrando valores
+    alert("El promedio es: "+prom);
+
+    document.write('El promedio es: '+prom+"<br>");
+    document.write('<hr>');
+
+    // Ejemplo 3
+    // Desarrollar una aplicación que permita mostrar un mensaje de saludo con tu nombre, si se sabe que el nombre es Mario
+    // ¿Cuantas variables necesito?
+    // 1
+        // ¿Que tipo de dato necesito?
+    // Texto
+    // Declarando variable
+    var nom;
+    // Iicializamos la variable
+    nom="";
+    // Asignando valores
+    nom='Mario';
+    //Mostrando valores
+    alert("Hola como estas: "+nom+", espero que muy bien");
+
+    document.write("Hola como estas: "+nom+", espero que muy bien");
+    document.write("<hr>");
+
+
+    // Ejemplo 4
+    //Desarrolar una aplicaión que permita calcular el sueldo final de un trabajador, si se sabe que su sueldo basico es de 1000 soles y recibe una bonificación de 7%, y se le aplica un descuento del 4%, Mostrar todos los valores.
+    var final;
+    var basico;
+    var boni;
+    var desc;
+
+    final=0;
+    basico=0;
+    boni=0;
+    desc=0;
+
+    basico=1000;
+    boni=7/100*(basico);
+    desc=4/100*(basico);
+
+    final=basico+boni-desc;
+
+    alert("El sueldo basico es: "+basico);
+    alert("La bonificación es: "+boni);
+    alert("El descuento es: "+desc);
+    alert("El sueldo final del trabajador es de: "+final);
+
+    document.write("El sueldo basico es: "+basico+"<br>");
+    document.write("La bonificación es: "+boni+"<br>");
+    document.write("El descuento es: "+desc+"<br>");
+    document.write("El sueldo final del trabajador es de: "+final+"<br>");
+    document.write("<hr>");
+
+    //Ejemplo5
+    //Desarrollar una aplicaión que permita calcular el total a pagar si se sabe que la cantidad que se compra es 10 y el precio del produsto comprado es 125.80 y ademas se debe de calcular el igv que es el 18% del sub total.
+    //Mostrar todos los resultados.
+
+    var total
+    var can
+    var pre
+    var igv
+    var sub
+
+    total=0
+    can=0
+    pre=0
+    igv=0
+    sub=0
+
+    can=10
+    pre=125.80
+    sub=can*pre
+    igv=18/100*(sub)
+    total=sub-igv
+
+    alert("La cantidad que compro es: "+can);
+    alert("El precio del prosucto es: "+pre);
+    alert("El igv del producto es: "+igv);
+    alert("El precio total de la compra es: S/ "+total);
+
+    document.write("La cantidad que compro es: "+can+"<br>");
+    document.write("El precio del prosucto es: "+pre+"<br>");
+    document.write("El igv del producto es: "+igv+"<br>");
+    document.write("El precio total de la compra es: S/ "+total+"<br>");
+    document.write("<hr>");
+    document.write("<a href='Index.html'>Regresar</a>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 3</title>
+    <script type="text/javascript">
+    // Estructura selectiva
+    // Se basa en la evaluación de casos, estos casos pueden ser números o texto 
+    // Sintaxis
+    // switchvariable
+
+    // Ejemplo 1
+    // Desarrollar una aplicación que permita calcular el sueldo final de un trabajador si se sabe que su sueldo basico se ingresa por teclado.
+    // Adicional a eso se la va a calcular una bonificación y un descuento dependiendo de la categoria a la cual pertenece, como se muestra a contunuación:
+    // Categoria    Bonificación    Descuento
+    // A            7%              5%
+    // B            9%              7%
+    // C            11%             9%
+    // ¿Cuantas variables necesito?
+    // 5
+    // ¿Que tipo de datos necesito?
+    // Real, Texto
+    // ¿Cuales serian las variables?
+    // sb, bon, des, sf, cat
+    // ¿Que variables voy a leer?
+    // sb, cat
+    // Definiendo e inicializando variables
+    var sb=0, bon=0, des=0, sf=0, cat="";
+    // Capturando valores
+    sb=parseFloat(prompt("Ingrese el sueldo basico del trabajador:"));
+    cat=prompt("Ingrese la categoria [a] o [b] o [c]");
+    // Selectiva
+    switch(cat.toLowerCase()){ //toLowerCase() --> convierte todo a minúscula
+        case "a":
+        bon=sb*0.07;
+        des=sb*0.05;
+        break;
+        case "b":
+        bon=sb*0.09;
+        des=sb*0.07;
+        break;
+        case "c":
+        bon=sb*0.11;
+        des=sb*0.09;
+        break;
+        default:
+        bon=0;
+        des=0;
+        break;
+    }
+    // Realizando operaciones
+    sf=sb+bon-des;
+    //Mostrando resultados
+    alert("El sueldo basico es: "+sb);
+    alert("La bonificación es: "+bon);
+    alert("El descuento es: "+des);
+    alert("El sueldo final es: "+sf);
+
+
+    // Ejemplo 2
+    // Desarrollar una aplicación que permita ingresar el precio de un producto y la cantidad a comprar y depensiendo de la categoria se aplicara un descuento al subtotal, tal como se muestra en la siguiente tabla:
+    // Categoria    Descuento
+    // 1            3%
+    // 2            5%
+    // 3            7%
+    // 4            9%
+    //Mostrar todos los resultados
+    // ¿Cuantas variables necesito?
+    // 6
+    // ¿Que tipo de datos necesito?
+    // Real, Entero
+    // ¿Cuales serian las variables?
+    // pre, can, sbt, des, tot, cat
+    // ¿Que variables voy a leer?
+    // pre, can, cat
+    // Definiendo e inicializando variables
+    var pre=0, can=0, tot=0, des=0, sbt=0, cat=0;
+    //Capturando valores
+    pre=parseFloat(prompt("Ingrese el precio del producto:"));
+    can=parseFloat(prompt("Ingresa la cantidad de productos a comprar:"));
+    cat=parseInt(prompt("Ingresa la categoria [1] o [2] o [3] o [4]"));
+    // Realizando operaciones
+    sbt=pre*can;
+    // Selectiva
+    switch(cat){
+        case 1:
+            des=sb*0.03;
+        break;
+        case 2:
+            des=sb*0.05;
+        break;
+        case 3:
+            des=sb*0.07;
+        break;
+        case 4:
+            des=sb*0.09;
+        break;
+        default:
+            des=0;
+        break;
+    }
+    tot=sbt-des;
+    //Mostrando resultados
+    document.write("El subtotal es: "+sbt+"<br>");
+    document.write("El descuento es: "+des+"<br>");
+    document.write("El total es: "+tot+"<br>");
+    document.write("<hr>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
