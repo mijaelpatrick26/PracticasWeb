@@ -79,13 +79,13 @@ function Registrar(){
     if(txtNom.value=="" || txtNom.value==null){
         LlamarClase("Por favor ingresa tus nombres");
         txtNom.focus();
-    }else if(txtApe.value=="" || txtApe.value==nul){
-        LlamarClase("PPor favor ingresa tus apellidos");
-    }else if(txtCor.value=="" || txtCor.value==nul){
-        LlamarClase("PPor favor ingresa tu correo");
-    }else if(txtApe.value=="" || txtApe.value==nul){
-        LlamarClase("PPor favor ingresa tus apellidos");
-    }else if(rvMas.checked==false && rbFem.checked==false && rbOtr.checked==false){
+    }else if(txtApe.value=="" || txtApe.value==null){
+        LlamarClase("Por favor ingresa tus apellidos");
+    }else if(txtCor.value=="" || txtCor.value==null){
+        LlamarClase("Por favor ingresa tu correo");
+    }else if(txtApe.value=="" || txtApe.value==null){
+        LlamarClase("Por favor ingresa tus apellidos");
+    }else if(rbMas.checked==false && rbFem.checked==false && rbOtr.checked==false){
         LlamarClase("Por favor selecciona un sexo");
     }else if(chkEst.checked==false){
 
